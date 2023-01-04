@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script>
+        function esconde_div() {
+            var elemento2 = document.getElementById('datalistOptions').value;
+
+        
+
+            switch (elemento2) {
+                case "1":
+                     
+                    //parmetros regresion lineal
+                    var elemento=""
+                    var elementop=""
+                    var elementoN = ""
+                    elemento = document.getElementById("regLineal");
+                    elemento.style.display = 'block'; //block
+                    
+                    elementop = document.getElementById("regPoli");
+                    elementop.style.display = 'none'; //block
+
+                    var elementoN = document.getElementById("Neuronal");
+                    elementoN.style.display = 'none'; //block
+
+
+                    break;
+                case "2":
+                    var elemento = ""
+                    var elementop = ""
+                    var elementot = ""
+                    var  elementoN = ""
+
+                    var elemento = document.getElementById("regLineal");
+                    elemento.style.display = 'none'; //block
+                                
+                    //parametros regresion polinomial
+                     var elementop = document.getElementById("regPoli");
+                     elementop.style.display = 'block'; //block
+
+                     var elementot = document.getElementById("Tree");
+                    elementot.style.display = 'none'; //block
+
+                    var elementoN = document.getElementById("Neuronal");
+                    elementoN.style.display = 'none'; //block
+
+
+                    break;
+                 case "3":
+                    //Gauss
+                    var elemento = ""
+                    var elementop = ""
+                    var elementot = ""
+                    var elementoN = ""
+
+                    var elemento = document.getElementById("regLineal");
+                    elemento.style.display = 'none'; //block
+
+                    //parametros regresion polinomial
+                    var elementop = document.getElementById("regPoli");
+                    elementop.style.display = 'none'; //block
+
+                    var elementot = document.getElementById("Tree");
+                    elementop.style.display = 'none'; //block
+
+                    var elementoN = document.getElementById("Neuronal");
+                    elementoN.style.display = 'none'; //block
+
+
+                    break;
+                 case "4":
+                    //arbol desiciones
+                      var elemento = ""
+                    var elementop = ""
+                    var elementot=""
+                    var elementoN = ""
+
+                    var elemento = document.getElementById("regLineal");
+                    elemento.style.display = 'none'; //block
+
+                    //parametros regresion polinomial
+                    var elementop = document.getElementById("regPoli");
+                    elementop.style.display = 'none'; //block
+
+                    var elementot = document.getElementById("Tree");
+                    elementot.style.display = 'block'; //block
+
+                    var elementoN = document.getElementById("Neuronal");
+                    elementoN.style.display = 'none'; //block
+                    
+                    break;
+                  case "5":
+
+                   //arbol desiciones
+                   var elemento = ""
+                    var elementop = ""
+                    var elementot=""
+                    var elementoN = ''
+
+                    var elemento = document.getElementById("regLineal");
+                    elemento.style.display = 'none'; //block
+
+                    //parametros regresion polinomial
+                    var elementop = document.getElementById("regPoli");
+                    elementop.style.display = 'none'; //block
+
+                    var elementot = document.getElementById("Tree");
+                    elementot.style.display = 'none'; //block
+
+                    var elementoN = document.getElementById("Neuronal");
+                    elementoN.style.display = 'block'; //block
+
+                    
+                    
+                    //Neuronal
+                    break;
+
+                default:
+                //default statement or expression;
+            }
+    }  
+    </script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learnig</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<style>
+    .div-1 {
+        background-color: #aae418;
+    }
+
+    .div-2 {
+        background-color: #ABBAEA;
+    }
+
+    .div-3 {
+        background-color: #56a93a;
+    }
+
+    *{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    border:none;
+    width: 100%;
+}
+
+#header{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    overflow:hidden;
+}
+
+#footer{
+    position: fixed;
+    bottom:0;
+    left:0;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    overflow:hidden;
+}
+
+#formulario{
+    margin: 0 auto;
+    align-content: center;
+    border-radius: 10px;
+    border: 1px solid #666666;
+    width: 500px;
+}
+
+label {
+    font-weight: bold;
+    color: #444;
+    font-size: 14px;
+}
+
+input {
+    font-size: 14px;
+}
+
+input[type="text"] {
+    border-radius: 5px;
+    margin: 10px 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    color: #777;
+    max-width: 100%;
+    outline: none;
+    padding: 7px 8px;
+}
+
+input[type="submit"] {
+    border-radius: 5px;
+    margin: 10px 0;
+    background: #0088B2;
+    color: #fff;
+    padding: 8px 14px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+textarea{
+    border-radius: 5px;
+    margin: 10px 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    color: #777;
+    max-width: 100%;
+    outline: none;
+    padding: 7px 8px;
+}
+
+input[type="submit"]:hover {
+    background: #444;
+}
+</style>
+
+<body>
+    <h1 class = "text-center">Analisis de Datos</h1>    
+    <form class="p-3 text-center" action='/' method = "POST" enctype = "multipart/form-data">
+        <input class="form-control" type="file" name="file">
+            <br>
+            <br>
+            <form action="" >
+                
+                <label for="algoritmo" class="form-label">Elige un Algoritmo a Modelar</label>
+                <select name="datalistOptions" id="datalistOptions" class="selectpicker form-control"  onblur="javascript:esconde_div();">
+                    <option value="1">Regresion Lineal</option>
+                    <option value="2">Regresion Polinomial</option>
+                    <option value="3">Clasificador Gaussiano</option>
+                    <option value="4">Clasificador de Arboles de Decision</option>
+                    <option value="5">Redes Neuronales</option>
+                    </select>
+                
+                <br>
+                <br>
+
+                <object id="header" data="header.html" onload="resizeObj(this);"></object>
+
+                <hr align="left" noshade="noshade" size="2" width="100%" />
+
+                <div id="regLineal" class="div-2">
+                    <div class="mb-3">
+                        <input class="form-control" type="text" method="POST" name="x_name" placeholder="x.name -- variables independientes">
+                    <br>
+                        <input class="form-control" type="text" method="POST" name="y_name" placeholder="y.name -- variable dependiente">
+                    <br>
+                    <input class="form-control" type="text" method="POST" name="prediccion" placeholder=" Prediccion (ingresar valor) --opcional">
+                <br>
+                    </div>
+                </div>
+
+                <div id="regPoli" style="display:none" class="div-3">
+                    <div class="mb-3">
+                        <input class="form-control" type="text" method="POST" name="x_namep" placeholder="x.name">
+                        <br>
+                        <input class="form-control" type="text" method="POST" name="y_namep" placeholder="y.name">
+                        <br>
+                        <input class="form-control" type="text" method="POST" name="grado" placeholder="grado">
+                        <br>
+                        <input class="form-control" type="text" method="POST" name="Prediccion" placeholder="(Prediccion) ingrese valor a prdecir  -- opcional">
+                    </div>
+                    
+                </div>
+
+                <div id="Tree" style="display:none" class="div-3">
+                    <div class="mb-3">
+                        <input class="form-control" type="text" method="POST" name="explicativas" placeholder="Variable explicativa --obligatorio">
+                        <br>
+                        <input class="form-control" type="text" method="POST" name="number" placeholder="Cantidad de predicionesss  -- Opcional">
+                    </div>
+                    
+                </div>
+
+
+                <div id="Neuronal" style="display:none" class="div-3">
+                    <div class="mb-3">
+                        <input class="form-control" type="text" method="POST" name="x_namen" placeholder="Posicion de columna X Independiente">
+                        
+                        <br>
+                        <input class="form-control" type="text" method="POST" name="y_namen" placeholder="Posicion Columna Y Dependiente">
+
+                        <br>
+                        <input class="form-control" type="text" method="POST" name="pred" placeholder="Valor a predecir  -- Optional">
+                    </div>
+                    
+                </div>
+
+                <input class="btn btn-primary mt-3" type="submit" value="Analyze">
+
+        <object id="footer" data="footer.html" onload="resizeObj(this);"></object>
+        
+    </form>
+
+    
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+outlook,temperature,humedity,windy,play
+sunny,hot,higt,FALSE,N
+sunny,hot,higt,TRUE,N
+overcast,hot,higt,FALSE,P
+rain,mild,higt,FALSE,P
+rain,cool,normal,FALSE,P
+rain,cold,normal,TRUE,N
+overcast,cool,normal,TRUE,P
+sunny,mild,higt,FALSE,N
+sunny,cold,normal,FALSE,P
+rain,mild,normal,FALSE,P
+sunny,mild,normal,TRUE,P
+overcast,mild,higt,TRUE,P
+overcast,hot,normal,FALSE,P
+rain,mild,higt,TRUE,N
